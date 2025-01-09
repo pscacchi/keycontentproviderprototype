@@ -13,8 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import ar.com.scacchipa.providerapp.ui.theme.ProviderAppTheme
 
+/**
+ * How to test the Key Content Provider on terminal
+ * ./adb -s emulator-5554 shell content query --uri content://ar.com.scacchipa.providerapp/easyKey
+ * ./adb -s emulator-5554 shell content query --uri content://ar.com.scacchipa.providerapp/mediumKey
+ * ./adb -s emulator-5554 shell content query --uri content://ar.com.scacchipa.providerapp/hardKey
+ *
+ */
 
-// ./adb -s emulator-5554 shell content query --uri content://ar.com.scacchipa.providerapp/easyKey
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
